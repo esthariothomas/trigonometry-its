@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo"><a href="home.html">Trigonometry Online Learning</a></div>
+        <div class="header-list">
+          <ul class="navbar">
+            <li><a href="chapter1.html">Trigonometry I</a></li>
+            <li><a href="chapter2.html">Trigonometry II</a></li>
+            <li><a href="chapter3.html">Trigonometry III</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="titleLesson">
+            <h1 class="titleChapter"> Trigonometry III </h1>
+        </div>
+        <div class="contentWrapper">
+            <div class="fotoContent"><img src="" alt=""></div>
+            <h3 class="subTopic">Trigonometric Identities</h3>
+            <p>We have seen a few trigonometry basic and principles in the previous chapter. Now we will take a look deeper to a trigonometric identities which has a lot of formula.</p>
+            <p class="phytagoras"><b>Phytagoras Theorem</b></p>
+            <p class="noMarginTop">sin <sup>2</sup> θ + cos <sup>2</sup> θ = 1</p>
+            <p class="noMarginTop">1 + cot <sup>2</sup> θ = cosec <sup>2</sup> θ</p>
+            <p class="noMarginTop">tan <sup>2</sup> θ + 1 = sec <sup>2</sup> θ</p>
+            <p class="phytagoras"><b>Compound-angle Formula</b></p>
+            <p class="noMarginTop">cos (A + B) = cos A cos B - sin A sin B</p>
+            <p class="noMarginTop">cos (A - B) = cos A cos B + sin A sin B</p>
+            <p class="noMarginTop">sin (A + B) = sin A cos B + cos A sin B</p>
+            <p class="noMarginTop">sin (A - B) = sin A cos B - cos A sin B</p>
+            <h3 class="subTopic">Cosecant, Secant, and Cotangent</h3>
+            <img class="triangle9" src="../img/cosec.png" alt="">
+            <p>From the image above, we can say:</p>
+            <br>
+            <p class="noMarginTop">sin (θ) = 1 / csc (θ)</p>
+            <p class="noMarginTop">cos (θ) = 1 / sec (θ)</p>
+            <p class="noMarginTop">tan (θ) = 1 / cot (θ)</p>
+            <p>And the other way around:</p>
+            <br>
+            <p class="noMarginTop">csc (θ) = 1 / sin (θ)</p>
+            <p class="noMarginTop">sec (θ) = 1 / cos (θ)</p>
+            <p class="noMarginTop">cot (θ) = 1 / tan (θ)</p>
+            <br><br>
+        </div>
+    </div>
+
+    <div class="quizBtn">
+        <a href="home.html" class="button quiz">Back to Home</a>
+    </div>
+  <div id="feedback-main">
+    <div id="feedback-div">
+      <form action="contact.php" method="post" class="form" id="feedback-form1" name="form1" enctype="multipart/form-data">
+  
+        <p class="name">
+          <input name="name" type="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" required placeholder="Name" id="feedback-name" />
+        </p>
+  
+        <p class="email">
+          <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="feedback-email" placeholder="Email" required />
+        </p>
+  
+        <p class="text">
+          <textarea name="comment" type="comment" class="validate[required,length[6,300]] feedback-input" id="feedback-comment" required placeholder="Description"></textarea>
+        </p>
+  
+        <div class="feedback-submit">
+          <input type="submit" value="SEND" id="feedback-button-blue" />
+          <div class="feedback-ease"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <button id="popup" class="feedback-button" onclick="toggle_visibility()">Feedback</button>
+  <script src="../js/script.js"></script>
+    <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="footer-list">
+          &copy 2021 Kelas LB11 Kelompok 19
+        </div>
+      </div>
+</body>
+</html>

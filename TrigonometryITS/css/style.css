@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Avenir Next";
+    font-family: 'Montserrat', sans-serif;
+    background-color: #023E73;
+  }
+  
+ul.navbar{
+  list-style-type: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:black; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+  .header {
+    background-color: #005f99;
+    color: #fff;
+    height: 80px;
+  }
+  
+  .header-logo {
+    float: left;
+    font-size: 30px;
+    padding: 20px 40px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .header-list li {
+    float: left;
+    padding: 33px 40px;
+  }
+
+  ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+button a{
+  text-decoration: none;
+  color: black;
+}
+  
+  .main {
+    padding: 60px 50px;
+  }
+
+  .copy-container{
+    background-image: 
+    url(../img/bgimage.jpg);
+    background-size: cover;
+    padding: 50px;
+  }
+  
+  .copy-container h1 {
+    font-size: 140px;
+    color: #fff;
+  }
+  
+  .copy-container h2 {
+    font-size: 60px;
+    color: #fff;
+  }
+
+  .lesson-title{
+      text-align: center;
+      margin-top: 40px;
+      font-size: 36px;
+  }
+  
+  .card-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+  }
+  
+  .card{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #A7BBC7;
+    width: 33.3%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.header-card{
+    height: 150px;
+    background-color: #ffe0d8;
+}
+
+.content-card{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    line-height: 1.7;
+}
+.chapter{
+  width: 100%;
+  height: 150px;
+}
+  
+  .contact-form {
+    padding-top: 100px;
+  }
+  
+  /* Add CSS for <input> and <textarea> tags */
+  input, textarea{
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  input{
+    border: 1px solid #dee7ec;
+  }
+  
+  /* Add CSS for contact-submit */
+  .contact-submit{
+    background-color: #dee7ec;
+    color: #889eab;
+  }
+  
+  .footer {
+    background-color: #005f99;
+    color: #fff;
+    height: 60px;
+  }
+  
+  .footer-list {
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .footer-list li {
+    padding-bottom: 20px;
+  }
+
+  .titleLesson{
+    text-align: center;
+    color: white;
+  }
+
+  .titleChapter{
+    color: #000;
+    font-weight: normal;
+    padding-top: 25px;
+  }
+
+  .content{
+    max-width: 1200px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .triangle1{
+    margin-left: 10px;
+    width: 300px;
+  }
+
+  .triangle2{
+    margin-left: 10px;
+    width: 700px;
+  }
+
+  .triangle3{
+    margin-left: 30px;
+    margin-top: 40px;
+    width: 400px;
+  }
+
+  .triangle4{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 650px;
+  }
+
+  .triangle5{
+    margin-left: 20px;
+    width: 650px;
+  }
+
+  .triangle6{
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 680px;
+  }
+
+  .triangle7{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 600px;
+  }
+
+  .triangle8{
+    width: 770px;
+    margin-bottom: 30px;
+  }
+
+  .triangle9{
+    width: 770px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .list{
+    margin-left: 40px;
+  }
+
+  .button{
+    padding: 12px 30px;
+    color: #fff;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .btn:link, .btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    font-size: 12px;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0 ,0, .2);
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0 ,0, .2);
+}
+
+.btn-white{
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after{
+    background-color: #fff;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+  .quiz{
+    background-color: rgb(144, 203, 251);
+  }
+
+  .button:hover{
+    opacity: 1;
+  }
+
+  .fa{
+    margin: 6px;
+  }
+
+  .quizBtn{
+    text-align: center;
+  }
+
+.contentWrapper p{
+  margin-top: 35px;
+  margin-left: 10px;
+}
+
+.contentWrapper p.phytagoras{
+  margin-bottom: 20px;
+}
+
+.contentWrapper p.noMarginTop{
+  margin:auto;
+  margin-left: 10px;
+}
+
+.subTopic{
+  margin-top :15px;
+  margin-left: 25px;
+}
+.header-list li {
+  list-style: none;
+}
+.RegistOffer{
+  max-width: 400px;
+  padding: 5% 0;
+  margin: 50px auto;
+}
+.formContainer{
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  max-width: 400px;
+  margin: 0 auto 100px;
+  padding: 30px;
+}
+#fullName,#email,#address,#password,#schoolName{
+  outline: 1;
+  background:#EDEDE6;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+#buttonSubmitRegister{
+  text-transform: uppercase;
+  outline: 1;
+  background:#636159;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dropdownControl,#file{
+  width: 80%;
+  border: 1;
+  padding: 6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#lblError{
+  color: red;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.Allogin{
+  color: #023E73;
+  font-weight: bold;
+}
+.feedback-button {
+  height: 40px;
+  border: solid 3px #CCCCCC;
+  background: #333;
+  width: 100px;
+  line-height: 32px;
+  -webkit-transform: rotate(-90deg);
+  font-weight: 600;
+  color: white;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  text-align: center;
+  font-size: 17px;
+  position: fixed;
+  right: -40px;
+  top: 45%;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  z-index: 999;
+}
+
+#feedback-main {
+  display: none;
+  float: left;
+  padding-top: 0px;
+}
+
+#feedback-div {
+  background-color: rgba(72, 72, 72, 0.4);
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  width: 450px;
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+  color: #3c3c3c;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.feedback-input:focus {
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #3498db;
+  color: #3498db;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+
+/* Icons ---------------------------------- */
+
+#feedback-name {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-name:focus {
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-email {
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-email:focus {
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-comment {
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#feedback-comment {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+input:hover,
+#feedback-comment:hover,
+input:focus,
+#feedback-comment:focus {
+  background-color: white;
+}
+
+#feedback-button-blue {
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  float: left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+#feedback-button-blue:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #0493bd;
+}
+
+.feedback-button-blue:hover {
+  color: #3498db;
+}
+
+.feedback-ease {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.feedback-submit:hover .feedback-ease {
+  width: 100%;
+  background-color: white;
+}
+
+@media only screen and (max-width: 580px) {
+  #feedback-div {
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
